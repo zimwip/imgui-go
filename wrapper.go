@@ -3,6 +3,7 @@ package imgui
 // #cgo CPPFLAGS: -I./imgui -DIMGUI_DISABLE_WIN32_DEFAULT_IME_FUNCTIONS
 // #cgo CXXFLAGS: -std=c++11
 // #cgo CXXFLAGS: -Wno-subobject-linkage
+// #cgo CXXFLAGS: -Wno-stringop-overflow
 import "C"
 
 // Note: imgui_freetype.cpp compilation gives these warnings, hence it's disabled in CXXFLAGS
